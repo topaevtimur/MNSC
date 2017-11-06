@@ -1,0 +1,6 @@
+#ifndef MNSC_SIMPLE_ITERATION_H
+#define MNSC_SIMPLE_ITERATION_H
+
+double get_next_approx(double r, int iter);
+
+#endif //MNSC_SIMPLE_ITERATION_H
