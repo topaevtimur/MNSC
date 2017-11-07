@@ -22,7 +22,7 @@ static double init_first_value(double r) {
     return dis(gen);
 }
 
-double get_next_approx(double r, int iter) {
+double get_next_approx(double r, size_t iter) {
     static double x;
     if (iter == 0) {
         x = init_first_value(r);
