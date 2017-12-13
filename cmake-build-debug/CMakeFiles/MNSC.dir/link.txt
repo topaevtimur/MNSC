@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/MNSC.dir/main.cpp.o  -o MNSC simple_iteration/libsimple_iteration.a 

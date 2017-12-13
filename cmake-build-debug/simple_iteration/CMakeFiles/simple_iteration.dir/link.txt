@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsimple_iteration.a  CMakeFiles/simple_iteration.dir/iterations.cpp.o CMakeFiles/simple_iteration.dir/bifurcation.cpp.o
-/usr/bin/ranlib libsimple_iteration.a

@@ -1,0 +1,5 @@
+set term wxt
+set grid xtics ytics
+show grid
+set clip two
+plot "plot" with linespoints
