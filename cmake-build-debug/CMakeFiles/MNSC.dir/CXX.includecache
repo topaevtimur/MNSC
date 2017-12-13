@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/maria/ITMO/MNSC/main.cpp
+iostream
+-
+fstream
+-
+simple_iteration/bifurcation.cpp
+/home/maria/ITMO/MNSC/simple_iteration/bifurcation.cpp
+
+/home/maria/ITMO/MNSC/simple_iteration/bifurcation.cpp
+fstream
+-
+iterations.cpp
+/home/maria/ITMO/MNSC/simple_iteration/iterations.cpp
+
+/home/maria/ITMO/MNSC/simple_iteration/iterations.cpp
+random
+-
+iostream
+-
+fstream
+-
+

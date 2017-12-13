@@ -1,7 +1,12 @@
-#include "iterations.h"
-#include <random>
 
-static double phi(double x, double r) {
+#include <random>
+#include <iostream>
+#include <fstream>
+
+double const q = 0.99;
+double const eps = 0.1;
+
+double phi(double x, double r) {
     return r * x * (1 - x);
 }
 
@@ -22,12 +27,21 @@ static double init_first_value(double r) {
     return dis(gen);
 }
 
-double get_next_approx(double r, size_t iter) {
-    static double x;
-    if (iter == 0) {
-        x = init_first_value(r);
-        return x;
+void get_next_approx(std::ofstream& os, double r) {
+
+    static double prev = 0;
+    static double cur = init_first_value(r);
+    int i = 0;
+
+    while (std::abs(cur - prev) > (1 - q) / q * eps) {
+        os << i << " " << cur << std::endl;
+        prev = cur;
+        cur = phi(cur, r);
+        i++;
     }
-    x = phi(x, r);
-    return x;
+    if (system("gnuplot first_gnu -p")) {
+        std::cerr << "Can't draw the graph\n";
+    }
 }
+
+
