@@ -1,6 +1,6 @@
 #include <iostream>
 #include <fstream>
-#include "simple_iteration/iterations.h"
+#include "simple_iteration/bifurcations.cpp"
 
 int main() {
     double r;
