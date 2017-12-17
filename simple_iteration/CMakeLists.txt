@@ -5,6 +5,6 @@ set(CMAKE_CXX_STANDARD 14)
 set(GCC_COVERAGE_COMPILE_FLAGS "-O2")
 add_definitions(${GCC_COVERAGE_COMPILE_FLAGS})
 
-set(SOURCE_FILES bifurcations.cpp iterations.cpp)
+set(SOURCE_FILES bifurcations.cpp iterations.cpp constants.h)
 
 add_library(simple_iteration ${SOURCE_FILES})

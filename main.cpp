@@ -1,14 +1,15 @@
 #include <iostream>
 #include <fstream>
 #include "simple_iteration/bifurcations.cpp"
+#include "simple_iteration/iterations.cpp"
 
 int main() {
-    double r;
-    size_t iterations;
-    std::cin >> r;
-    std::ofstream os("plot");
-    //get_next_approx(os, r);
-    draw_bifurcation(os);
-    os.close();
+    std::ofstream it("it_plot");
+    draw_iterations(it);
+    it.close();
+    std::ofstream bif("bif_plot");
+    draw_bifurcation(bif);
+    bif.close();
+
     return 0;
 }
