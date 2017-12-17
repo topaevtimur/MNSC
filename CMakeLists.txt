@@ -9,5 +9,6 @@ add_definitions(${GCC_COVERAGE_COMPILE_FLAGS})
 set(SOURCE_FILES main.cpp)
 add_executable(MNSC ${SOURCE_FILES})
 add_subdirectory(simple_iteration)
+add_subdirectory(newton)
 
-target_link_libraries(MNSC simple_iteration)
+target_link_libraries(MNSC simple_iteration newton)

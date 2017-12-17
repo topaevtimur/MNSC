@@ -1,7 +1,7 @@
 #include <random>
 #include <iostream>
 #include <fstream>
-#include "constants.h"
+#include "iterations.h"
 
 static double init_first_value(double r) {
     double l = lower(r);

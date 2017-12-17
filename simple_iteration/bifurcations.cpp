@@ -1,6 +1,6 @@
 #include <fstream>
 #include <iostream>
-#include "constants.h"
+#include "iterations.h"
 
 void draw_bifurcation(std::ofstream& plot) {
     int max_bif;

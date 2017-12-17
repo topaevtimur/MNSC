@@ -1,0 +1,5 @@
+set term wxt
+set grid xtics ytics
+show grid
+set clip two
+plot "path_plot" using 1:2 with linespoints
