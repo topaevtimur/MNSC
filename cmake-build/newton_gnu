@@ -1,4 +1,4 @@
-set term wxt
+set term x11
 set grid xtics ytics
 show grid
 set clip two

@@ -13,7 +13,7 @@ static const std::vector<cdouble> ROOTS = {
         {cos(4*PI/3), sin(4*PI/3)}
 };
 
-static const int DIVERGES = 0;
+static const int DIVERGES = -1;
 
 static int calculate(double x, double y, double precision = 0.01) {
     double sq_precision = precision * precision;
