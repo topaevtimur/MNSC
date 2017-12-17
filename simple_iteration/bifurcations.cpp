@@ -19,7 +19,7 @@ void draw_bifurcation(std::ofstream& plot) {
                 cur = phi(prev, r);
             }
             for (int j = 0; j < branches; j++) {
-                plot << r << " " << cur << "\n" << std::endl;
+                plot << r << " " << cur << std::endl;
                 cur = phi(cur, r);
             }
             r += step;
